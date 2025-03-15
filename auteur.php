@@ -47,7 +47,7 @@ class Auteur{
     public function afficherBibliogaphie(){
         echo "Livres de $this :<br>";
         foreach($this->_livres as $livre){
-            echo "$livre<br";
+            echo "$livre<br>";
         }
     }
 }
