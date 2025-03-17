@@ -42,6 +42,7 @@ class Auteur{
     // Ajouter un livre à la bibliographie de l'auteur
     public function ajouterLivre(Livre $livre) {
         array_push($this->_livres, $livre);
+        // $this->_livres[] =  $livre;
     }
 
     public function afficherBibliogaphie(){

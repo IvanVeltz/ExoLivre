@@ -43,17 +43,7 @@ class Livre{
          $this->_auteur = $auteur;
      }
 
-    // Constructeur
-    public function __construct($titre, $nbrPages, $anneeParution, $prix, Auteur $auteur) {
-        $this->_titre = $titre;
-        $this->_nbrPages = $nbrPages;
-        $this->_anneeParution = $anneeParution;
-        $this->_prix = $prix;
-        $this->_auteur = $auteur;
-        $auteur->ajouterLivre($this);
-    }
-
-    // Methodes
+     // Methodes
     public function __toString(){
         return "$this->_titre ($this->_anneeParution) : $this->_nbrPages pages / $this->_prix €";
     }
